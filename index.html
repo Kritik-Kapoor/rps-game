@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Score cards -->
+    <div class="score-container">
+      <div class="title">
+        <h1>ROCK<br />PAPER<br />SCISSORS</h1>
+      </div>
+      <div class="score-cards">
+        <div class="score" style="margin-right: 29px">
+          <p class="card-heading">
+            COMPUTER<br />
+            SCORE
+          </p>
+          <p class="score-value" id="comp-score">0</p>
+        </div>
+        <div class="score">
+          <p class="card-heading">
+            YOUR<br />
+            SCORE
+          </p>
+          <p class="score-value" id="your-score">0</p>
+        </div>
+      </div>
+    </div>
+    <!-- Main game container -->
+    <div id="main-container">
+      <div class="line-container">
+        <img src="./assets/Line 1.png" alt="" class="straight-line" />
+        <img src="./assets/Line 3.png" alt="" class="left-line" />
+        <img src="./assets/Line 2.png" alt="" class="right-line" />
+      </div>
+      <div class="game-container">
+        <div class="btn rock-btn" id="rock">
+          <img
+            src="./assets/rock.png"
+            alt=""
+            class="icon-img"
+            style="left: 18px"
+          />
+        </div>
+        <div class="btn scissors-btn" id="scissors">
+          <img
+            src="./assets/scissors.png"
+            alt=""
+            class="icon-img"
+            style="left: 42px"
+          />
+        </div>
+        <div class="btn paper-btn" id="paper">
+          <img
+            src="./assets/paper.png"
+            alt=""
+            class="icon-img"
+            style="left: 28px; height: 65px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Outcome container -->
+    <div class="container" id="container">
+      <div>
+        <h2 class="heading">YOU PICKED</h2>
+        <div class="btn rock-btn" id="you-picked" style="transform: scale(1.1)">
+          <img src="./assets/rock.png" alt="" class="icon-img" />
+        </div>
+      </div>
+      <div class="winner-text">
+        <h1 id="result">YOU WIN</h1>
+        <p style="margin-top: 0; font-size: 1.5rem">AGAINST PC</p>
+        <button class="play-btn" id="play-btn">PLAY AGAIN</button>
+      </div>
+      <div>
+        <h2 class="heading">PC PICKED</h2>
+        <div
+          class="btn scissors-btn"
+          id="pc-picked"
+          style="transform: scale(1.1)"
+        >
+          <img src="./assets/scissors.png" alt="" class="icon-img" />
+        </div>
+      </div>
+    </div>
+    <!-- Rules modal container with buttons-->
+    <div class="rules-container">
+      <div id="modal-btn">
+        <button id="close-btn">X</button>
+        <h2 class="modal-header">Game Rules</h2>
+        <ul>
+          <li>
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </li>
+          <li>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </li>
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </li>
+        </ul>
+      </div>
+      <button id="btn-rules">RULES</button>
+      <!-- To go to final outcome page, nextpage.html -->
+      <a href="finalpage.html" target="" style="text-decoration: none">
+        <button id="next-page" style="display: none">NEXT</button>
+      </a>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- box-shadow: 0px 0px 70px rgba(46, 154, 37, 1.13); -->

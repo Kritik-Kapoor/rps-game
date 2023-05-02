@@ -1,0 +1,49 @@
+body {
+  background-color: #8cc461;
+}
+.trophy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  position: relative;
+}
+#starts-img {
+  z-index: -10;
+}
+#trophy-img {
+  position: absolute;
+  top: 31%;
+}
+.text-container {
+  color: white;
+  text-align: center;
+}
+.text-container > h1 {
+  font-size: 91px;
+  line-height: 107px;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+}
+.text-container > h3 {
+  font-size: 41px;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  margin-top: 0;
+}
+.play-button {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  background: #ffffff;
+  border-radius: 9px;
+  padding: 11px 37px;
+  border: none;
+  color: #6b6b6b;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1300px) {
+  .play-button {
+    margin-top: 30px;
+  }
+}
